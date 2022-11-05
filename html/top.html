@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/tablet.css">
+    <link rel="stylesheet" href="/css/phone.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/jquery.js"></script>
     <title>Reitech株式会社</title>
 </head>
 <body>
-    <header id="header">
-        <a class="header-title" href="/" >Reitech株式会社</a>
-        <p class="header-text1">Communication × Technology </p>
-        <p class="header-text2">幸せで豊かな世の中を創る！ </p>
+    <header class="top-header">
+        <a class="top-header-title" href="/html/top.html" >Reitech株式会社</a>
+        <p class="top-header-text1">Communication × Technology </p>
+        <p class="top-header-text2">幸せで豊かな世の中を創る！ </p>
         <div id="video-area">
             <video id="video" poster="" webkit-playsinline playsinline muted autoplay loop>
-                <source src="top.mp4" type="video/mp4">
+                <source src="/imege/top.mp4" type="video/mp4">
                 <source src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-3-1/video/movie.ogv" type="video/ogv">
                 <source src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-3-1/video/movie.webm" type="video/webm">
                 <p>動画を再生できる環境ではありません。</p>
@@ -33,23 +36,25 @@
         </label>
         <div id="sidebarMenu">
             <ul class="sidebarMenuInner">
-                <li>Reitech Company<span>co LTD</span></li>
-                <li><a href="/" >Top</a></li>
-                <li><a href="/" >会社概要</a></li>
-                <li><a href="/" >フリーランスエージェント</a></li>
-                <li><a href="/" >採用情報</a></li>
-                <li><a href="/" >NEWS</a></li>
-                <li><a href="/" >お問合せ</a></li>
+                <li>Reitech Company<span>co Ltd</span></li>
+                <li><a href="/html/top.html" >ホーム</a></li>
+                <li><a href="/html/company.html" >会社概要</a></li>
+                <li><a href="/html/content.html" >事業内容</a></li>
+                <li><a href="/html/news.html" >NEWS</a></li>
+                <li><a href="/html/recruit.html" >採用情報</a></li>
+                <li><a href="/html/contact.html" >お問合せ</a></li>
             </ul>
         </div>
     </div>
 
-    <div id="container">
+    <div class="top-container">
         <section class="section">
             <h3 class="section-title text-center">企業理念</h3>
             <div class="section-text mt-5"></div>
                 <p class="bold l-space-2 l-height-15">我々は、加速するITテクノロジーの進歩を最大限に活用し、より豊かで笑顔溢れる社会を創るために躍進します。</p>
                 <p class="mt-3 l-space-2 l-height-15">ITテクノロジー業界で幸せに使命感を持って働く人材を、一人でも多く増やすことが欠くことのできない基盤であると考え創業に至りました。<p>
+                <p class="mt-3 l-space-2 l-height-15">そのために、各々が持つスキルと個性を活かし、目指す目標を達成するために輝ける環境とリソースを探し出し与えていきます。<p>
+                <p class="mt-3 l-space-2 l-height-15">次世代を担う優秀な人材が、ITテクノロジー業界で働くことを魅力的に感じられる社会を実現してまいります。</p>
         </section>
         <section class="section">
             <h3 class="section-title text-center">社長メッセージ</h3>
@@ -59,15 +64,11 @@
         </section>
     </div> 
 
-    <div>
-        <footer id="footer">
-            <section class="footer-section">
-                <p class="bold">Reitech株式会社</p>
-                <p class="bold mt-5">本社</p>
-                <p class="mt-2">〒104-0061</p>
-                <p class="mt-2">東京都中央区銀座一丁目22番11号　銀座大竹ビジデンス2階</p>
-            </section>
-        </footer>
-    </div>
+    <div id="footer"></div>
+    <script>
+        $(function(){
+            $('#footer').load('/html/footer.html');
+        });
+    </script>
 </body>
 </html>

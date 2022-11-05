@@ -1,0 +1,103 @@
+@media screen and (min-width: 481px) {
+	/* 481px以上に適用されるCSS（タブレット用） */
+    /* ============================================================
+        TOPページ
+    ===============================================================*/
+    .top-header-title {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+        color: #fff;
+        font-size: 28px;
+    }
+    .top-header-text1 {
+        display: block;
+        padding-top: 25vh;
+        padding-left: 50px;
+        color: #fff;
+        font-size: 37px;
+    }
+    .top-header-text2 {
+        display: block;
+        padding-top: 60px;
+        padding-left: 100px;
+        color: #fff;
+        font-size: 30px;
+    }
+
+    /* ============================================================ 
+        スライドメニュー
+    ===============================================================*/
+    #sidebarMenu {
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 70vw;
+        transform: translateX(-70vw);
+        transition: transform 250ms ease-in-out;
+        background-color: #000060;
+        z-index: 10;
+    }
+    .sidebarIconToggle {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: absolute;
+        z-index: 99;
+        height: 100%;
+        width: 100%;
+        top: 25px;
+        left: 25px;
+        height: 22px;
+        width: 22px;
+    }
+    #openSidebarMenu:checked ~ .sidebarIconToggle > .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        opacity: 0;
+        margin-left: 69vw;
+    }
+    #openSidebarMenu:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(135deg);
+        margin-top: 8px;
+        margin-left: 69vw;
+    }
+    #openSidebarMenu:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(-135deg);
+        margin-top: -9px;
+        margin-left: 69vw;
+    }
+
+    /* ============================================================
+        header
+    ===============================================================*/
+    .header-title {
+        display: block;
+        text-align: center;
+        color: #fff;
+        font-size: 26px;
+    }
+
+    /* ============================================================
+        footer
+    ===============================================================*/
+    .footer {
+        padding:30px 5vw;
+    }
+    .footer-menu {
+        display: flex;
+        gap: 30px;
+    }
+
+    /* ============================================================
+        contents
+    ===============================================================*/
+    .main-contents {
+        padding-top: 67px;
+    }
+}
