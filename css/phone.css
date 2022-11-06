@@ -1,0 +1,88 @@
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    /* ============================================================
+        TOPページ
+    ===============================================================*/
+    .dis-phone-tab {
+        display: block!important;
+    }
+    .dis-pc {
+        display: none!important;
+    }
+    .top-header-title {
+        display: block;
+        text-align: center;
+        padding-top: 17px;
+        color: #fff;
+        font-size: 22px;
+    }
+    .top-header-text1 {
+        display: block;
+        text-align: center;
+        padding-top: 200px;
+        color: #fff;
+        font-size: 28px;
+    }
+    .top-header-text2 {
+        display: block;
+        text-align: center;
+        padding-top: 30px;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    /* ============================================================ 
+        スライドメニュー
+    ===============================================================*/
+    #sidebarMenu {
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 80vw;
+        transform: translateX(-80vw);
+        transition: transform 250ms ease-in-out;
+        background-color: #000066;
+        z-index: 10;
+    }
+    .sidebarIconToggle {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: absolute;
+        z-index: 99;
+        height: 100%;
+        width: 100%;
+        top: 20px;
+        left: 15px;
+        height: 22px;
+        width: 22px;
+    }
+    #openSidebarMenu:checked ~ .sidebarIconToggle > .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        opacity: 0;
+        margin-left: 80vw;
+    }
+    #openSidebarMenu:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(135deg);
+        margin-top: 8px;
+        margin-left: 80vw;
+    }
+    #openSidebarMenu:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(-135deg);
+        margin-top: -9px;
+        margin-left: 80vw;
+    }
+
+    /* ============================================================
+    footer
+    ===============================================================*/
+    .footer {
+        padding:30px 0;
+    }
+}

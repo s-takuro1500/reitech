@@ -1,0 +1,175 @@
+/* ============================================================
+    top-header&背景動画
+===============================================================*/
+.top-header{
+    position: relative;
+    height: 100vh;
+} 
+#video-area{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+}
+#video {
+    /*天地中央配置*/
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*縦横幅指定*/
+    width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+    height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/* ============================================================
+    TOPページ
+===============================================================*/
+.top-container{
+    background:#fff;
+    padding:40px 0;
+}
+
+/* ============================================================
+    スライドメニュー
+===============================================================*/
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.40);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+#openSidebarMenu {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+/* ============================================================
+    header
+===============================================================*/
+.header {
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center!important;
+    align-items: center;
+    padding:0px 20px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.40);
+    z-index: 10;
+}
+.header-title {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+}
+
+/* ============================================================
+    footer
+===============================================================*/
+.footer-section {
+    width: 85vw;
+    margin: 30px auto;
+    color: #fff;
+    font-size: 14px;
+}
+.googlemap {
+    position: relative; /* 子要素の基準とする */
+    padding-bottom: 75%; /* 表示するパディング領域の縦横比（4：3） */
+    height: 0;
+    overflow: hidden;
+}
+.googlemap iframe {
+    position: absolute; /* 親要素のパディング領域に配置するために絶対配置を指定 */
+    top: 0; /* 垂直方向トップに配置 */  
+    left: 0; /*  水平方向左に配置 */
+    width: 100%; /* 親コンテナの幅いっぱいに表示 */
+    height: 100%; /* 親コンテナの高さいっぱいに表示 */
+}
+.footer-menu-contents > li{
+    padding: 10px 0 10px 15px;
+}
+
+/* ============================================================
+    contents
+===============================================================*/
+.main-contents {
+    padding-top: 60px;
+}
+.page-title {
+    display: block;
+    background-color: #191970;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+/* ============================================================
+    各セクション
+===============================================================*/
+.section {
+    width: 80vw;
+    margin: 30px auto;
+}
+.section-title {
+    font-size: 20px;
+}

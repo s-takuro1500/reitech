@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/pc.css">
+    <link rel="stylesheet" href="/css/tablet.css">
+    <link rel="stylesheet" href="/css/phone.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/jquery.js"></script>
+    <title>Reitech株式会社</title>
+</head>
+<body>
+    <header class="top-header">
+        <!-- スマホ用タイトル -->
+        <a class="top-header-title dis-phone-tab" href="/html/top.html" >Reitech株式会社</a>
+
+        <!-- PC用タイトル&メニュー -->
+        <div class="top-header-pc dis-pc">
+            <a class="top-header-title-pc" href="/html/top.html" >Reitech株式会社</a>
+            <div class="top-header-menu-pc">
+                <ul class="top-header-menu-list-pc">
+                    <li><a href="/html/top.html" >ホーム</a></li>
+                    <li><a href="/html/company.html" >会社概要</a></li>
+                    <li><a href="/html/content.html" >事業内容</a></li>
+                    <li><a href="/html/news.html" >NEWS</a></li>
+                    <li><a href="/html/recruit.html" >採用情報</a></li>
+                    <li><a href="/html/contact.html" >お問合せ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 背景動画 -->
+        <p class="top-header-text1">Communication × Technology </p>
+        <p class="top-header-text2">幸せで豊かな世の中を創る！ </p>
+        <div id="video-area">
+            <video id="video" poster="" webkit-playsinline playsinline muted autoplay loop>
+                <source src="/imege/top.mp4" type="video/mp4">
+                <source src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-3-1/video/movie.ogv" type="video/ogv">
+                <source src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-3-1/video/movie.webm" type="video/webm">
+                <p>動画を再生できる環境ではありません。</p>
+            </video>
+        </div>
+    </header>
+
+    <!-- スマホ用ハンバーガーメニュー -->
+    <div class="dis-phone-tab">
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+        <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+                <li>Reitech Company<span>co Ltd</span></li>
+                <li><a href="/html/top.html" >ホーム</a></li>
+                <li><a href="/html/company.html" >会社概要</a></li>
+                <li><a href="/html/content.html" >事業内容</a></li>
+                <li><a href="/html/news.html" >NEWS</a></li>
+                <li><a href="/html/recruit.html" >採用情報</a></li>
+                <li><a href="/html/contact.html" >お問合せ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- メインコンテンツ -->
+    <div class="top-container">
+        <section class="section">
+            <h3 class="section-title text-center">企業理念</h3>
+            <div class="section-text mt-5"></div>
+                <p class="bold l-space-2 l-height-15">我々は、加速するITテクノロジーの進歩を最大限に活用し、より豊かで笑顔溢れる社会を創るために躍進します。</p>
+                <p class="mt-3 l-space-2 l-height-15">ITテクノロジー業界で幸せに使命感を持って働く人材を、一人でも多く増やすことが欠くことのできない基盤であると考え創業に至りました。<p>
+                <p class="mt-3 l-space-2 l-height-15">そのために、各々が持つスキルと個性を活かし、目指す目標を達成するために輝ける環境とリソースを探し出し与えていきます。<p>
+                <p class="mt-3 l-space-2 l-height-15">次世代を担う優秀な人材が、ITテクノロジー業界で働くことを魅力的に感じられる社会を実現してまいります。</p>
+        </section>
+        <section class="section">
+            <h3 class="section-title text-center">社長メッセージ</h3>
+            <div class="section-text mt-5"></div>
+                <p class="bold l-space-2 l-height-15">我々は、加速するITテクノロジーの進歩を最大限に活用し、より豊かで笑顔溢れる社会を創るために躍進します。</p>
+                <p class="mt-3 l-space-2 l-height-15">ITテクノロジー業界で幸せに使命感を持って働く人材を、一人でも多く増やすことが欠くことのできない基盤であると考え創業に至りました。<p>
+        </section>
+    </div> 
+
+    <div id="footer"></div>
+    <script>
+        // footer呼び込み処理
+        $(function(){
+            $('#footer').load('/html/footer.html');
+        });
+    </script>
+</body>
+</html>
