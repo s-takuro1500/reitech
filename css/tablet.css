@@ -1,14 +1,20 @@
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 481px) and (max-width:959px) {
 	/* 481px以上に適用されるCSS（タブレット用） */
     /* ============================================================
         TOPページ
     ===============================================================*/
+    .dis-phone-tab {
+        display: block!important;
+    }
+    .dis-pc {
+        display: none!important;
+    }
     .top-header-title {
         display: block;
         text-align: center;
         padding-top: 20px;
         color: #fff;
-        font-size: 28px;
+        font-size: 24px;
     }
     .top-header-text1 {
         display: block;
@@ -72,17 +78,7 @@
         margin-top: -9px;
         margin-left: 69vw;
     }
-
-    /* ============================================================
-        header
-    ===============================================================*/
-    .header-title {
-        display: block;
-        text-align: center;
-        color: #fff;
-        font-size: 26px;
-    }
-
+    
     /* ============================================================
         footer
     ===============================================================*/
@@ -92,12 +88,5 @@
     .footer-menu {
         display: flex;
         gap: 30px;
-    }
-
-    /* ============================================================
-        contents
-    ===============================================================*/
-    .main-contents {
-        padding-top: 67px;
     }
 }

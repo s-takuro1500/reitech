@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/pc.css">
     <link rel="stylesheet" href="/css/tablet.css">
     <link rel="stylesheet" href="/css/phone.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -14,7 +15,25 @@
 </head>
 <body>
     <header class="top-header">
-        <a class="top-header-title" href="/html/top.html" >Reitech株式会社</a>
+        <!-- スマホ用タイトル -->
+        <a class="top-header-title dis-phone-tab" href="/html/top.html" >Reitech株式会社</a>
+
+        <!-- PC用タイトル&メニュー -->
+        <div class="top-header-pc dis-pc">
+            <a class="top-header-title-pc" href="/html/top.html" >Reitech株式会社</a>
+            <div class="top-header-menu-pc">
+                <ul class="top-header-menu-list-pc">
+                    <li><a href="/html/top.html" >ホーム</a></li>
+                    <li><a href="/html/company.html" >会社概要</a></li>
+                    <li><a href="/html/content.html" >事業内容</a></li>
+                    <li><a href="/html/news.html" >NEWS</a></li>
+                    <li><a href="/html/recruit.html" >採用情報</a></li>
+                    <li><a href="/html/contact.html" >お問合せ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 背景動画 -->
         <p class="top-header-text1">Communication × Technology </p>
         <p class="top-header-text2">幸せで豊かな世の中を創る！ </p>
         <div id="video-area">
@@ -27,7 +46,8 @@
         </div>
     </header>
 
-    <div>
+    <!-- スマホ用ハンバーガーメニュー -->
+    <div class="dis-phone-tab">
         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
         <label for="openSidebarMenu" class="sidebarIconToggle">
             <div class="spinner diagonal part-1"></div>
@@ -47,6 +67,7 @@
         </div>
     </div>
 
+    <!-- メインコンテンツ -->
     <div class="top-container">
         <section class="section">
             <h3 class="section-title text-center">企業理念</h3>
@@ -66,6 +87,7 @@
 
     <div id="footer"></div>
     <script>
+        // footer呼び込み処理
         $(function(){
             $('#footer').load('/html/footer.html');
         });

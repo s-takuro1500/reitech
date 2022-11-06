@@ -1,0 +1,100 @@
+@media screen and (min-width: 960px) {
+	/* 960px以上に適用されるCSS（PC用） */
+    /* ============================================================
+        TOPページ
+    ===============================================================*/
+    .dis-phone-tab {
+        display: none!important;
+    }
+    .dis-pc {
+        display: block!important;
+    }
+    .top-header-pc {
+        height: 80px;
+        width: 100vw;
+        display: flex!important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+    }
+    .top-header-title-pc {
+        display: block;
+        color: #fff;
+        font-size: 24px;
+    }
+    .top-header-title {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+        color: #fff;
+        font-size: 22px;
+    }
+    .top-header-text1 {
+        display: block;
+        padding-top: 25vh;
+        padding-left: 50px;
+        color: #fff;
+        font-size: 37px;
+    }
+    .top-header-text2 {
+        display: block;
+        padding-top: 60px;
+        padding-left: 100px;
+        color: #fff;
+        font-size: 30px;
+    }
+    .top-header-menu-pc {
+        color: #fff;
+    }
+    .top-header-menu-list-pc {
+        display: flex;
+    }
+    .top-header-menu-list-pc li{
+        margin-left: 28px;
+    }
+    .top-header-menu-list-pc li a{
+        padding: 7px 0;
+        font-size: 14px;
+    }
+
+    /* ============================================================
+        header
+    ===============================================================*/
+    .header-pc {
+        height: 80px;
+        width: 100vw;
+        display: flex!important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .header-title-pc {
+        display: block;
+        color: #fff;
+        font-size: 22px;
+    }
+    .header-menu-pc {
+        color: #fff;
+    }
+    .header-menu-list-pc {
+        display: flex;
+    }
+    .header-menu-list-pc li{
+        margin-left: 28px;
+    }
+    .header-menu-list-pc li a{
+        padding: 7px 0;
+        font-size: 14px;
+    }
+
+    /* ============================================================
+        footer
+    ===============================================================*/
+    .footer {
+        padding:30px 5vw;
+    }
+    .footer-menu {
+        display: flex;
+        gap: 30px;
+    }
+}
