@@ -21,12 +21,12 @@
         text-align: center;
         padding-top: 200px;
         color: #fff;
-        font-size: 23px;
+        font-size: 28px;
     }
     .top-header-text2 {
         display: block;
         text-align: center;
-        padding-top: 25px;
+        padding-top: 30px;
         color: #fff;
         font-size: 20px;
     }
@@ -42,7 +42,7 @@
         width: 80vw;
         transform: translateX(-80vw);
         transition: transform 250ms ease-in-out;
-        background-color: #000060;
+        background-color: #000066;
         z-index: 10;
     }
     .sidebarIconToggle {

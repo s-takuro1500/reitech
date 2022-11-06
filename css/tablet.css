@@ -42,7 +42,7 @@
         width: 70vw;
         transform: translateX(-70vw);
         transition: transform 250ms ease-in-out;
-        background-color: #000060;
+        background-color: #000066;
         z-index: 10;
     }
     .sidebarIconToggle {
