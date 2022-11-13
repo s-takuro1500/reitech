@@ -10,6 +10,9 @@
 .text-center {
     text-align: center;
 }
+.text-right {
+    text-align: right;
+}
 .fz-18 {
     font-size: 18px;
 }
@@ -51,4 +54,22 @@
 }
 .mb-5 {
     margin-bottom: 20px;
+}
+.ml-1 {
+    margin-left: 4px;
+}
+.ml-2 {
+    margin-left: 8px;
+}
+.ml-3 {
+    margin-left: 12px;
+}
+.ml-4 {
+    margin-left: 16px;
+}
+.ml-5 {
+    margin-left: 20px;
+}
+.box-shadow {
+    box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.2);
 }

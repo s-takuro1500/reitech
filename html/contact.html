@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/pc.css">
+    <link rel="stylesheet" href="/css/tablet.css">
+    <link rel="stylesheet" href="/css/phone.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/jquery.js"></script>
+    <title>Reitech株式会社｜お問合せ</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="main-contents">    
+        <h2 class="page-title">お問合せ</h2>
+        <section class="section">
+            <form class="contact-form box-shadow" action="">
+                <div class="contact-table">
+                    <div class="contact-label bold">氏名</div>
+                    <input class="contact-input" type="text" name="name" id="">
+                </div>
+
+                <div class="contact-table">
+                    <div class="contact-label bold">メールアドレス</div>
+                    <input class="contact-input" type="email" name="mail" id="">
+                </div>
+
+                <div class="contact-table">
+                    <div class="contact-label bold">お問合せタイトル</div>
+                    <input class="contact-input" type="text" name="title" id="">
+                </div>
+
+                <div class="contact-table">
+                    <div class="contact-label bold">お問合せ内容</div>
+                    <textarea class="contact-textarea" name="text" rows="10" id=""></textarea>
+                </div>
+                <div class="contact-table-submit">
+                    <input class="contact-submit" type="submit" value="送信">
+                </div>
+                
+            </form>
+
+        </section>
+    </div>
+    <div id="footer"></div>
+    <script>
+        $(function(){
+            $('#header').load('/html/header.html');
+        });
+        $(function(){
+            $('#footer').load('/html/footer.html');
+        });
+    </script>
+</body>
+</html>
