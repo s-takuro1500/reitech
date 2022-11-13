@@ -89,4 +89,85 @@
         display: flex;
         gap: 30px;
     }
+
+    /* ============================================================
+    各セクション
+    ===============================================================*/
+    .section {
+        width: 80vw;
+        margin: 30px auto;
+    }
+    .section-title {
+        font-size: 20px;
+    }
+
+    /* ============================================================
+        company
+    ===============================================================*/
+    .company-table {
+        display: flex;
+        border-bottom: 1px solid #191970;
+        margin-bottom: 10px;
+    }
+
+    .company-label {
+        margin-bottom: 10px;
+        width: 150px;   
+    }
+    /* ============================================================
+        content
+    ===============================================================*/
+    .content-table {
+        margin-bottom: 30px;
+        display: flex;
+        gap: 30px;
+    }
+    .content-img img {
+        width: 200px;
+    }
+    /* ============================================================
+        news
+    ===============================================================*/
+    .news-table {
+        margin-bottom: 30px;
+        display: flex;
+        gap: 30px;
+        padding: 20px;
+    }
+    .news-table {
+        margin-bottom: 30px;
+    }
+    .news-img img {
+        width: 200px;
+    }
+
+    /* ============================================================
+        recruit
+    ===============================================================*/
+    .recruit-form {
+        width: 70vw;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .recruit-table {
+        margin-bottom: 30px;
+    }
+    .recruit-label {
+        margin-bottom: 5px;
+    }
+
+    /* ============================================================
+        contact
+    ===============================================================*/
+    .contact-form {
+        width: 70vw;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .contact-table {
+        margin-bottom: 30px;
+    }
+    .contact-label {
+        margin-bottom: 5px;
+    }
 }

@@ -149,7 +149,7 @@ input[type="checkbox"]:checked ~ #sidebarMenu {
 }
 
 /* ============================================================
-    contents
+    main-contents
 ===============================================================*/
 .main-contents {
     padding-top: 60px;
@@ -164,12 +164,100 @@ input[type="checkbox"]:checked ~ #sidebarMenu {
 }
 
 /* ============================================================
-    各セクション
+    company
 ===============================================================*/
-.section {
-    width: 80vw;
-    margin: 30px auto;
+.company-img img{
+    width: 100vw;
 }
-.section-title {
-    font-size: 20px;
+/* ============================================================
+    content
+===============================================================*/
+.content-img {
+    margin-bottom: 12px;
+}
+.content-label {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+.content-text {
+    line-height: 1.5;
+}
+
+/* ============================================================
+    news
+===============================================================*/
+.news-card {
+    padding: 10px;
+}
+.news-img {
+    margin-bottom: 12px;
+}
+.news-label {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+.news-text {
+    line-height: 1.5;
+}
+
+/* ============================================================
+    recruit
+===============================================================*/
+.recruit-table-submit {
+    text-align: center;
+}
+.recruit-input {
+    border-bottom: #000066 1px solid;
+    width: 100%;
+    padding: 10px;
+}
+.recruit-textarea {
+    border: #000066 1px solid;
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+}
+.recruit-submit {
+    border: solid 2px #191970;
+    padding: 16px 30px;
+    position: relative;
+    background-color: #191970;
+    color: #fff;
+    border-radius: 10px;
+    transition-duration:0.5s;
+}
+.recruit-submit:hover {
+    background-color: #fff;
+    color: #191970;
+}
+
+/* ============================================================
+    contact
+===============================================================*/
+.contact-table-submit {
+    text-align: center;
+}
+.contact-input {
+    border-bottom: #000066 1px solid;
+    width: 100%;
+    padding: 10px;
+}
+.contact-textarea {
+    border: #000066 1px solid;
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+}
+.contact-submit {
+    border: solid 2px #191970;
+    padding: 16px 30px;
+    position: relative;
+    background-color: #191970;
+    color: #fff;
+    border-radius: 10px;
+    transition-duration:0.5s;
+}
+.contact-submit:hover {
+    background-color: #fff;
+    color: #191970;
 }
