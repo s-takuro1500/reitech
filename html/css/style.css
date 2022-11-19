@@ -106,14 +106,13 @@ input[type="checkbox"]:checked ~ #sidebarMenu {
     header
 ===============================================================*/
 .header {
-    height: 60px;
+    height: 65px;
     width: 100vw;
     position: fixed;
     display: flex;
     justify-content: center!important;
     align-items: center;
-    padding:0px 20px;
-    border-bottom: 3px solid rgba(255, 255, 255, 0.40);
+    border-bottom: 1px solid #fff;
     z-index: 10;
 }
 .header-title {
@@ -152,11 +151,11 @@ input[type="checkbox"]:checked ~ #sidebarMenu {
     main-contents
 ===============================================================*/
 .main-contents {
-    padding-top: 60px;
+    padding-top: 65px;
 }
 .page-title {
     display: block;
-    background-color: #191970;
+    background-color: #000066;
     color: #fff;
     text-align: center;
     font-size: 18px;
@@ -166,6 +165,9 @@ input[type="checkbox"]:checked ~ #sidebarMenu {
 /* ============================================================
     company
 ===============================================================*/
+.company-table {
+    margin-bottom: 24px;
+}
 .company-img img{
     width: 100vw;
 }
@@ -183,6 +185,43 @@ input[type="checkbox"]:checked ~ #sidebarMenu {
     line-height: 1.5;
 }
 
+.achievement-title {
+    font-size:18px;
+}
+.achievement-box {
+    border-bottom:1px solid #000066;
+}
+
+/* ============================================================
+    freelance
+===============================================================*/
+.freelance-table-submit {
+    text-align: center;
+}
+.freelance-input {
+    border-bottom: #000066 1px solid;
+    width: 100%;
+    padding: 10px;
+}
+.freelance-textarea {
+    border: #000066 1px solid;
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+}
+.freelance-submit {
+    border: solid 2px #191970;
+    padding: 16px 30px;
+    position: relative;
+    background-color: #191970;
+    color: #fff;
+    border-radius: 10px;
+    transition-duration:0.5s;
+}
+.freelance-submit:hover {
+    background-color: #fff;
+    color: #191970;
+}
 /* ============================================================
     news
 ===============================================================*/

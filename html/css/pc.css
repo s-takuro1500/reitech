@@ -11,16 +11,15 @@
     }
     .top-header-pc {
         height: 80px;
-        width: 100vw;
         display: flex!important;
         justify-content: space-between;
         align-items: center;
-        padding: 0 30px;
+        margin: 0 15vw;
     }
     .top-header-title-pc {
         display: block;
         color: #fff;
-        font-size: 24px;
+        font-size: 28px;
     }
     .top-header-title {
         display: block;
@@ -54,24 +53,22 @@
     }
     .top-header-menu-list-pc li a{
         padding: 7px 0;
-        font-size: 14px;
     }
 
     /* ============================================================
         header
     ===============================================================*/
     .header-pc {
-        height: 80px;
         width: 100vw;
         display: flex!important;
         justify-content: space-between;
         align-items: center;
-        padding: 0 20px;
+        margin: 0 15vw;
     }
     .header-title-pc {
         display: block;
         color: #fff;
-        font-size: 22px;
+        font-size: 28px;
     }
     .header-menu-pc {
         color: #fff;
@@ -84,7 +81,6 @@
     }
     .header-menu-list-pc li a{
         padding: 7px 0;
-        font-size: 14px;
     }
 
     /* ============================================================
@@ -102,7 +98,7 @@
     各セクション
     ===============================================================*/
     .section {
-        width: 70vw;
+        width: 50vw;
         margin: 30px auto;
     }
     .section-title {
@@ -114,7 +110,7 @@
     ===============================================================*/
     .company-table {
         display: flex;
-        border-bottom: 1px solid #191970;
+        border-bottom: 1px solid #000066;
         margin-bottom: 10px;
     }
 
@@ -134,6 +130,22 @@
     .content-img img {
         width: 300px;
     }
+
+    /* ============================================================
+        freelance
+    ===============================================================*/
+    .freelance-form {
+        padding: 20px;
+    }
+    .freelance-table {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .freelance-label {
+        padding-top: 10px;
+        width: 200px;   
+    }
+
     /* ============================================================
         news
     ===============================================================*/
