@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/pc.css">
+    <link rel="stylesheet" href="/css/tablet.css">
+    <link rel="stylesheet" href="/css/phone.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/jquery.js"></script>
+    <title>Reitech株式会社｜フリーランスエージェント</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="main-contents">    
+        <h2 class="page-title">フリーランスエージェント</h2>
+        <section class="section">
+            <form class="freelance-form box-shadow" action="">
+                <div class="freelance-table">
+                    <div class="freelance-label bold">氏名</div>
+                    <input class="freelance-input" type="text" name="name" id="">
+                </div>
+
+                <div class="freelance-table">
+                    <div class="freelance-label bold">メールアドレス</div>
+                    <input class="freelance-input" type="email" name="mail" id="">
+                </div>
+
+                <div class="freelance-table">
+                    <div class="freelance-label bold">お問合せタイトル</div>
+                    <input class="freelance-input" type="text" name="title" id="">
+                </div>
+
+                <div class="freelance-table">
+                    <div class="freelance-label bold">お問合せ内容</div>
+                    <textarea class="freelance-textarea" name="text" rows="10" id=""></textarea>
+                </div>
+                <div class="freelance-table-submit">
+                    <input class="freelance-submit" type="submit" value="送信">
+                </div>
+                
+            </form>
+
+        </section>
+    </div>
+    <div id="footer"></div>
+    <script>
+        $(function(){
+            $('#header').load('/html/header.html');
+        });
+        $(function(){
+            $('#footer').load('/html/footer.html');
+        });
+    </script>
+</body>
+</html>

@@ -94,7 +94,7 @@
     各セクション
     ===============================================================*/
     .section {
-        width: 80vw;
+        width: 60vw;
         margin: 30px auto;
     }
     .section-title {
@@ -125,6 +125,25 @@
     .content-img img {
         width: 200px;
     }
+
+    .achievement-title {
+        font-size: 20px;
+    }
+    /* ============================================================
+        freelance
+    ===============================================================*/
+    .freelance-form {
+        width: 70vw;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .freelance-table {
+        margin-bottom: 30px;
+    }
+    .freelance-label {
+        margin-bottom: 5px;
+    }
+
     /* ============================================================
         news
     ===============================================================*/
